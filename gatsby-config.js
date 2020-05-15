@@ -4,6 +4,21 @@ module.exports = {
       resolve: 'gatsby-theme-contentful',
       options: {},
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Fluffball House Call`,
+        icon: `content/assets/logo/logo.jpg`,
+        short_name: `Fluffball House Call`,
+        start_url: `/`,
+        background_color: `#008080`,
+        theme_color: `#008080`,
+        display: `standalone`,
+        scope: '/',
+        crossOrigin: `use-credentials`,
+        // theme_color_in_head: false
+      },
+    },
   ],
   siteMetadata: {
     title: `Fluffball Housecall`,
