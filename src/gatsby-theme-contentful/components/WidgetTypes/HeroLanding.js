@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import TextOnlyCard from 'gatsby-theme-contentful/src/components/Card/TextOnlyCard';
+import Button from '../Button/Button';
 
 const HeroLanding = ({ page }) => {
   return (
@@ -33,7 +34,7 @@ const HeroLanding = ({ page }) => {
                   {sect.description && (
                     <div className="text-lg text-gray-800 text-center">
                       {documentToReactComponents(
-                        sect.description.json
+                        sect.description.json,
                         // , {
                         // renderNode: {
                         //   [BLOCKS.EMBEDDED_ASSET]: (node, children) => (
@@ -61,7 +62,7 @@ const HeroLanding = ({ page }) => {
                               {sec.title}
                             </div>
                             <p
-                              className="text-gray-700 text-base mb-5"
+                              className="my-4 text-base text-gray-700 whitespace-pre-line"
                               key={`${sec.description}`}
                             >
                               {sec.description.description}
@@ -79,19 +80,14 @@ const HeroLanding = ({ page }) => {
                       })}
                   </div>
                 </div>
-                <div className="text-right text-xl">
+                <div className="text-center text-xl">
                   {sect.item &&
                     sect.item.map((sec, index) => {
                       return (
-                        <div
-                          className="mb-2 mr-2"
-                          key={`${sec.title}-${index}`}
-                        >
+                        <Button key={`${sec.title}-${index}`}>
                           {sec.link ? (
                             <a
-                              className={
-                                'text-teal-500 hover:text-teal-700 no-underline'
-                              }
+                              className={' no-underline'}
                               href={sec.link}
                               target="_blank"
                               rel="noopener noreferrer"
@@ -100,15 +96,13 @@ const HeroLanding = ({ page }) => {
                             </a>
                           ) : (
                             <Link
-                              className={
-                                'text-teal-500 hover:text-teal-700 no-underline'
-                              }
+                              className={' no-underline'}
                               to={`/${sec.slug}`}
                             >
                               {sec.title}
                             </Link>
                           )}
-                        </div>
+                        </Button>
                       );
                     })}
                 </div>
@@ -124,7 +118,7 @@ const HeroLanding = ({ page }) => {
                             className="max-w-full max-h-full"
                             key={`${index}-key`}
                             src={gal.fluid.src}
-                            srcSet={gal.fluid.srcSet}
+                            srcSet={gal.fluid.srcSetWebp}
                             sizes={gal.fluid.sizes}
                             alt={gal.description}
                           />

@@ -71,7 +71,7 @@ export const query = graphql`
           }
           image {
             description
-            fluid(maxWidth: 1904) {
+            fluid(maxWidth: 1904, quality: 100) {
               src
               srcSet
               srcSetWebp
@@ -95,7 +95,7 @@ export const query = graphql`
           }
           gallery {
             title
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 300, quality: 100) {
               src
               srcSetWebp
               sizes
