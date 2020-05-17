@@ -32,7 +32,7 @@ const HeroLanding = ({ page }) => {
                     {sect.title}
                   </div>
                   {sect.description && (
-                    <div className="text-lg text-gray-800 text-center">
+                    <div className="text-lg text-gray-800 text-center mb-2">
                       {documentToReactComponents(
                         sect.description.json,
                         // , {
