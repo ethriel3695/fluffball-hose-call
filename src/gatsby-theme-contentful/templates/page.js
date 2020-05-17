@@ -95,7 +95,7 @@ export const query = graphql`
           }
           gallery {
             title
-            fluid(maxWidth: 300, quality: 100) {
+            fluid(maxWidth: 400, quality: 100) {
               src
               srcSetWebp
               sizes

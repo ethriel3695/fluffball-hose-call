@@ -11,7 +11,7 @@ const HeroLanding = ({ page }) => {
         <div>
           {page.section.map((sect, index) => {
             return (
-              <div key={index}>
+              <div className="container" key={index}>
                 <div>
                   {sect.image ? (
                     <div className="max-w-full">
@@ -106,16 +106,15 @@ const HeroLanding = ({ page }) => {
                       );
                     })}
                 </div>
-                <div className="flex flex-wrap lg:flex-row flex-col">
+                <div className="flex flex-wrap -mx-3 lg:-mx-6">
                   {sect.gallery &&
                     sect.gallery.map((gal, index) => {
                       return (
                         <div
                           key={`gallery-${index}`}
-                          className="lg:w-1/4 rounded overflow-hidden shadow-lg px-4 py-2 mb-5"
+                          className="w-full sm:w-1/2 lg:w-1/3 p-3 md:p-6 shadow-lg rounded-md overflow-hidden"
                         >
                           <img
-                            className="max-w-full max-h-full"
                             key={`${index}-key`}
                             src={gal.fluid.src}
                             srcSet={gal.fluid.srcSetWebp}
