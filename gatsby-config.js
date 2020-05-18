@@ -36,5 +36,6 @@ module.exports = {
       email: '',
     },
     externalLinks: [{ label: '', link: '' }],
+    hasNotifications: false,
   },
 };
