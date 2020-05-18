@@ -72,10 +72,7 @@ export const query = graphql`
           image {
             description
             fluid(maxWidth: 1904, quality: 100) {
-              src
-              srcSet
-              srcSetWebp
-              sizes
+              ...GatsbyContentfulFluid_noBase64
             }
           }
           slug
@@ -96,10 +93,7 @@ export const query = graphql`
           gallery {
             title
             fluid(maxWidth: 400, quality: 100) {
-              src
-              srcSetWebp
-              sizes
-              srcSet
+              ...GatsbyContentfulFluid_noBase64
             }
           }
         }
