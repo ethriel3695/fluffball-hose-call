@@ -1,0 +1,97 @@
+@tailwind base;
+
+html body {
+    @apply .bg-white .font-sans .antialiased;
+}
+
+h1 {
+    @apply text-2xl;
+
+    @apply font-bold;
+
+    @apply my-2;
+}
+
+h2 {
+    @apply text-2xl;
+
+    @apply font-semibold;
+
+    @apply my-2;
+}
+
+h3 {
+    @apply text-xl;
+
+    @apply font-semibold;
+
+    @apply my-2;
+}
+
+h4 {
+    @apply text-lg;
+
+    @apply font-semibold;
+
+    @apply my-2;
+}
+
+a {
+    @apply text-blue-600 underline;
+}
+
+p {
+    @apply my-3;
+}
+
+article {
+    @apply px-4;
+}
+
+@tailwind components;
+
+.bgThemeColor {
+    @apply text-white bg-teal-500;
+}
+
+.bgThemeColor:hover {
+    @apply bg-teal-600;
+}
+
+.textThemeColor {
+    @apply text-teal-500;
+}
+
+.textThemeColor:hover {
+    @apply text-teal-600;
+}
+
+.borderThemeColor {
+    @apply border-teal-500;
+}
+
+.borderThemeColor:hover {
+    @apply border-teal-500;
+}
+
+.borderThemeColor:active {
+    @apply border-teal-500;
+}
+
+@tailwind utilities;
+
+.container {
+    @apply .max-w-screen-xl .mx-auto .px-4;
+}
+
+@screen md {
+    .container {
+        @apply .px-6;
+    }
+}
+
+@screen lg {
+    .container {
+        @apply .px-8;
+    }
+}

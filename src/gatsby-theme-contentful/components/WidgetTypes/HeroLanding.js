@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import TextOnlyCard from 'gatsby-theme-contentful/src/components/Card/TextOnlyCard';
-import Button from '../Button/Button';
+import Button from 'gatsby-theme-contentful/src/components/Button/Button';
 
 const HeroLanding = ({ page }) => {
   return (
@@ -80,7 +80,7 @@ const HeroLanding = ({ page }) => {
                           <Button key={`${sec.title}-${index}`}>
                             {sec.link ? (
                               <a
-                                className={' no-underline'}
+                                className={' no-underline text-white'}
                                 href={sec.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -89,7 +89,7 @@ const HeroLanding = ({ page }) => {
                               </a>
                             ) : (
                               <Link
-                                className={' no-underline'}
+                                className={' no-underline text-white'}
                                 to={`/${sec.slug}`}
                               >
                                 {sec.title}
