@@ -19,7 +19,7 @@ const HeroLanding = ({ page }) => {
                   </div>
                 ) : null}
                 <div className="container">
-                  <h2 className="text-left p-8" key={`${sect.title}`}>
+                  <h2 className="text-left py-8" key={`${sect.title}`}>
                     {sect.title}
                   </h2>
                   {sect.description && (
@@ -70,7 +70,7 @@ const HeroLanding = ({ page }) => {
                         })}
                     </div>
                   </div>
-                  <div className="text-center text-xl">
+                  <div className="text-left text-xl">
                     {sect.item &&
                       sect.item.map((sec, index) => {
                         return (
