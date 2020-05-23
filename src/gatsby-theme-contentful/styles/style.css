@@ -78,6 +78,10 @@ article {
     @apply border-teal-500;
 }
 
+.headerLogoSize {
+    width: 6rem;
+}
+
 @tailwind utilities;
 
 .container {
