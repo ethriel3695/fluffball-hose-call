@@ -66,31 +66,33 @@ article {
 
 @tailwind components;
 
-.bgThemeColor {
+.bgPrimary {
     @apply text-white bg-teal-500;
 }
 
-.bgThemeColor:hover {
+.bgPrimary:hover {
     @apply bg-teal-600;
 }
 
-.textThemeColor {
-    @apply text-teal-500;
+.textPrimary {
+    @apply text-teal-500 !important;
 }
 
-.textThemeColor:hover {
-    @apply text-teal-600;
+.textPrimary:hover {
+    @apply text-teal-600 !important;
 }
 
-.borderThemeColor {
+.borderPrimary {
     @apply border-teal-500;
+    @apply text-gray-900;
 }
 
-.borderThemeColor:hover {
-    @apply border-teal-500;
+.borderPrimaryActive {
+    @apply border-teal-500 !important;
+    @apply text-gray-900 !important;
 }
 
-.borderThemeColor:active {
+.borderPrimary:hover {
     @apply border-teal-500;
 }
 

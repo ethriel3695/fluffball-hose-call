@@ -48,6 +48,7 @@ export default function PageTemplate({
           copyright={pageContext.copyrightMessage}
           loginOption={pageContext.loginOption}
           isAuthApp={pageContext.isAuthApp}
+          title={pageData.title}
         >
           <WidgetHandler pageContext={pageContext} page={pageData} />
         </NoAuthContainer>

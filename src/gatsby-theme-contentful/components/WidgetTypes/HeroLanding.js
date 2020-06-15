@@ -23,7 +23,7 @@ const HeroLanding = ({ page }) => {
                     {sect.title}
                   </h2>
                   {sect.description && (
-                    <p className="text-lg text-gray-800 text-left mb-2">
+                    <div className="text-lg text-gray-800 text-left mb-2">
                       {documentToReactComponents(
                         sect.description.json,
                         // , {
@@ -37,7 +37,7 @@ const HeroLanding = ({ page }) => {
                         // },
                         // }
                       )}
-                    </p>
+                    </div>
                   )}
                   <div>
                     <div className="flex flex-wrap lg:flex-row flex-col">
@@ -74,7 +74,7 @@ const HeroLanding = ({ page }) => {
                     {sect.item &&
                       sect.item.map((sec, index) => {
                         return (
-                          <Button key={`${sec.title}-${index}`}>
+                          <Button className="" key={`${sec.title}-${index}`}>
                             {sec.link ? (
                               <a
                                 className={' no-underline text-white'}
