@@ -7,9 +7,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `FluffBall House Call`,
+        name: `Fluff Ball House Call`,
         icon: `content/assets/logo/logo.jpg`,
-        short_name: `FluffBall House Call`,
+        short_name: `Fluff Ball House Call`,
         start_url: `/`,
         background_color: `#008080`,
         theme_color: `#008080`,
@@ -21,7 +21,7 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: `FluffBall House Call`,
+    title: `Fluff Ball House Call`,
     author: `Reuben Ellis`,
     description: `I love grooming dogs and what better way then to come to your home where your pet is comfortable and close to family!`,
     greeting: ``,
