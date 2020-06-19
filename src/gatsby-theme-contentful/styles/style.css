@@ -2,7 +2,8 @@
 
 html body {
     @apply bg-white;
-    @apply font-sans;
+    @apply font-serif;
+    @apply leading-loose;
     @apply antialiased;
 }
 
