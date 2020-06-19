@@ -1,7 +1,7 @@
 import React from 'react';
 import loadable from '@loadable/component';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-const HeroComponent = loadable(() => import('../UI/HeroComponent'));
+import HeroComponent from '../UI/HeroComponent';
 const SectionWidget = loadable(() => import('./SectionWidget'));
 
 const HeroLanding = ({ page }) => {
