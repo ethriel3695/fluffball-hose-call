@@ -9,7 +9,6 @@ const Blog = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 mt-20">
         {blog.allMdx.nodes &&
           blog.allMdx.nodes.map((article, index) => {
-            console.log(article.frontmatter.date);
             const date = article.frontmatter.date;
             return (
               <a
